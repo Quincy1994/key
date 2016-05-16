@@ -1,0 +1,793 @@
+
+*{margin: 0; padding: 0;}
+
+#container {
+	margin: 0 auto;
+	width: 1280px;
+    height: 800px;
+	
+	background: url(../images/bg-03.png) 0 0 no-repeat;
+}
+
+#header {
+	width: 1280px;
+    height: 118px;
+	
+}
+
+#mainContent {
+	width: 1280px;
+    height: 592px;
+	
+}
+
+#footer {
+	width: 1280px;
+    height: 90px;
+	background: url(../images/Footer/南校校办公楼237.png) 0 0 no-repeat;
+}
+
+.clearfloat {
+    clear: both;
+    height: 0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+* a {
+	
+	color:#3a90e8;
+	font-size:21px;
+	font-weight:500;
+	text-decoration:none;
+}
+
+* a:hover {
+	
+	color:#00ff00;
+	font-size:21px;
+	font-weight:500;
+	text-decoration: !important;
+}
+
+* a:active {
+	
+	color:#ff0000;
+	font-size:21px;
+	font-weight:500;
+	text-decoration:none;
+}
+
+
+
+
+
+
+#eee {
+	float: left;
+	width: 377px;
+    height: 118px;
+	
+}
+
+#eee01 {
+	width: 377px;
+    height: 118px;
+	background: url(../images/Header/广东外语外贸大学.png) 0 0 no-repeat;
+}
+
+#fff {
+	float: left;
+	width: 650px;
+    height: 118px;
+	
+}
+
+#fff01 {
+	margin-left: -38px;
+	width: 650px;
+    height: 118px;
+	background: url(../images/Header/创新创业项目管理系统.png) 0 0 no-repeat;
+}
+
+#ggg {
+	float: left;
+	width: 327px;
+    height: 630px;
+	background: transparent;
+	
+}
+
+#ggg01 {
+	width: 377px;
+    height: 370px;
+}
+
+#ggg01-1 {
+	position:relative;
+	margin-top:-8px;
+	margin-left:89px;
+	width: 210px;
+    height: 70px;
+	background: url(../images/left-SideBar/SideBar-首页.png) 0 0 no-repeat;
+}
+
+#ggg01-1:hover {
+	width: 210px;
+    height: 70px;
+	background: url(../images/left-SideBar/SideBar-首页-2.png) 0 0 no-repeat;
+}
+
+#ggg01-2 {
+	position:relative;
+	margin-top:-10px;
+	margin-left:89px;
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-公告.png) 0 0 no-repeat;
+}
+
+#ggg01-2:hover {
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-公告-2.png) 0 0 no-repeat;
+}
+
+#ggg01-3 {
+	position:relative;
+	margin-top:0px;
+	margin-left:89px;
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-项目展示.png) 0 0 no-repeat;
+}
+
+#ggg01-3:hover {
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-项目展示-2.png) 0 0 no-repeat;
+}
+
+#ggg01-4 {
+	position:relative;
+	margin-top:-2px;
+	margin-left:89px;
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-新闻中心.png) 0 0 no-repeat;
+}
+
+#ggg01-4:hover {
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-新闻中心-2.png) 0 0 no-repeat;
+}
+
+#ggg01-5 {
+	position:relative;
+	margin-top:1px;
+	margin-left:89px;
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-资源下载.png) 0 0 no-repeat;
+}
+
+#ggg01-5:hover {
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-资源下载-2.png) 0 0 no-repeat;
+}
+
+#ggg01-6 {
+	position:relative;
+	margin-top:1px;
+	margin-left:89px;
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-成果展.png) 0 0 no-repeat;
+}
+
+#ggg01-6:hover {
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-成果展-2.png) 0 0 no-repeat;
+}
+
+#ggg01-7 {
+	position:relative;
+	margin-top:0px;
+	margin-left:89px;
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-留言榜.png) 0 0 no-repeat;
+}
+
+#ggg01-7:hover {
+	width: 210px;
+    height: 50px;
+	background: url(../images/left-SideBar/SideBar-留言榜-2.png) 0 0 no-repeat;
+}
+
+
+
+
+#ggg02 {
+	float: left;
+	width: 377px;
+    height: 222px;
+	background-color: transparent;
+}
+
+#ggg02-1 {
+	position:relative;
+	margin-top: 22px;
+	margin-left:87px;
+	width: 88px;
+    height: 40px;
+	background: url(../images/Login/登录.png) 0 0 no-repeat;
+}
+
+#ggg02-2 {
+	position:relative;
+	margin-top: -3px;
+	margin-left:85px;
+	padding-top:17px;
+	padding-left:6px;
+	width: 160px;
+    height: 52px;
+	background: url(../images/Login/登录-1-0.png) 0 0 no-repeat;
+}
+
+.text1   {color:#ffffff; font-size:17px;  font-weight:0; font-family:arial; background:transparent; 
+           -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px;
+         margin-left: 10px;   padding-left: 28px;  width:200px; 
+        border-top:none; border-left:none; border-right:none; border-bottom:none; }
+ 
+
+
+#ggg02-2:hover {
+	width: 160px;
+    height: 52px;
+	background: url(../images/Login/登录-1-1.png) 0 0 no-repeat;
+}
+
+
+#ggg02-3 {
+	position:relative;
+	margin-top: -1px;
+	margin-left:85px;
+	padding-top:12px;
+	padding-left:6px;
+	width: 160px;
+    height: 52px;
+	background: url(../images/Login/登录-2-0.png) 0 0 no-repeat;
+}
+
+#ggg02-3:hover {
+	width: 160px;
+    height: 52px;
+	background: url(../images/Login/登录-2-1.png) 0 0 no-repeat;
+}
+
+#ggg02-4 {
+	position:relative;
+	margin-top: -74px;
+	margin-left:238px;
+	width: 160px;
+    height: 52px;
+	background: url(../images/Login/登录-button.png) 0 0 no-repeat;
+}
+
+#ggg02-4:hover {
+	width: 160px;
+    height: 52px;
+	background: url(../images/Login/登录-button2.png) 0 0 no-repeat;
+}
+
+
+#ggg02-5 {
+	position:relative;
+	margin-top: 21px;
+	margin-left:84px;
+	padding-top:5px;
+	padding-left:15px;
+	width: 164px;
+    height: 35px;
+	color: #ffffff;
+	background-color: transparent;
+}
+
+#ggg02-5 select{
+	color: #000000;
+}
+
+
+#ggg02-6 {
+	position:relative;
+	margin-top: 10px;
+	margin-left:84px;
+	width: 64px;
+    height: 35px;
+	background: url(../images/Login/注册-0.png) 0 0 no-repeat;
+}
+
+#ggg02-6:hover {
+	width: 64px;
+    height: 35px;
+	background: url(../images/Login/注册-1.png) 0 0 no-repeat;
+}
+
+#ggg02-7 {
+	position:relative;
+	margin-top: -36px;
+	margin-left:148px;
+	width: 97px;
+    height: 35px;
+	background: url(../images/Login/登录说明-0.png) 0 0 no-repeat;
+}
+
+#ggg02-7:hover {
+	position:relative;
+	margin-top: -36px;
+	margin-left:148px;
+	width: 97px;
+    height: 35px;
+	background: url(../images/Login/登录说明-1.png) 0 0 no-repeat;
+}
+
+
+
+
+
+
+
+
+#hhh {
+	float: left;
+	width: 953px;
+    height: 610px;
+	background-color: transparent;
+}
+
+#hhh-content {
+    margin-top: 30px;
+	margin-left: 32px;
+	width:800px;
+	height:500px;	
+}
+
+#hhh-content TABLE {
+    margin-top: -8px;
+	margin-left: 0px;
+}
+
+#hhh-content p {
+	font-size:16px;
+	font-family:黑体;
+	font-weight:700;
+}
+
+
+
+
+
+
+
+#iii {
+	float: left;
+	width: 330px;
+    height: 592px;
+	background-color: transparent;
+}
+
+#iii-header {
+	width: 330px;
+    height: 92px;
+	
+}
+
+#iii01 {
+	
+}
+
+#iii01-1 {
+	width: 330px;
+    height: 51px;
+	background: url(../images/right-SideBar/最新公告.png) 0 0 no-repeat;
+}
+
+#iii01-2 {
+	width: 330px;
+    height: 181px;
+	background-color: transparent;
+}
+
+#iii01-2-1 {
+	width: 330px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-1-Header {
+	float:left;
+	width: 220px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-1-Header-txt {
+	margin-top: 6px;
+	margin-left: 14px;
+	width: 210px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#3a90e8;
+	font-size:21px;
+	font-weight:500;
+}
+
+#iii01-2-1-Content {
+	float:left;
+	width: 100px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-1-Content-txt {
+	margin-top: 14px;
+	margin-left: 8px;
+	width: 90px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#878788;
+	font-size:13px;
+	font-weight:500;
+}
+
+#iii01-2-2 {
+	width: 330px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-2-Header {
+	float:left;
+	width: 220px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-2-Header-txt {
+	margin-top: 6px;
+	margin-left: 14px;
+	width: 210px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#3a90e8;
+	font-size:21px;
+	font-weight:500;
+}
+
+#iii01-2-2-Content {
+	float:left;
+	width: 100px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-2-Content-txt {
+	margin-top: 14px;
+	margin-left: 8px;
+	width: 90px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#878788;
+	font-size:13px;
+	font-weight:500;
+}
+
+#iii01-2-3 {
+	width: 330px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-3-Header {
+	float:left;
+	width: 220px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-3-Header-txt {
+	margin-top: 6px;
+	margin-left: 14px;
+	width: 210px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#3a90e8;
+	font-size:21px;
+	font-weight:500;
+}
+
+#iii01-2-3-Content {
+	float:left;
+	width: 100px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-3-Content-txt {
+	margin-top: 14px;
+	margin-left: 8px;
+	width: 90px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#878788;
+	font-size:13px;
+	font-weight:500;
+}
+
+#iii01-2-4 {
+	width: 330px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-4-Header {
+	float:left;
+	width: 220px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-4-Header-txt {
+	margin-top: 6px;
+	margin-left: 14px;
+	width: 210px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#3a90e8;
+	font-size:21px;
+	font-weight:500;
+}
+
+#iii01-2-4-Content {
+	float:left;
+	width: 100px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii01-2-4-Content-txt {
+	margin-top: 14px;
+	margin-left: 8px;
+	width: 90px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#878788;
+	font-size:13px;
+	font-weight:500;
+}
+
+
+
+
+
+
+#iii02 {
+	
+}
+
+#iii02-1 {
+	width: 330px;
+    height: 50px;
+	background: url(../images/right-SideBar/最新新闻.png) 0 0 no-repeat;
+}
+
+#iii02-2 {
+	width: 330px;
+    height: 230px;
+	background-color: transparent;
+}
+
+#iii02-2-1 {
+	width: 330px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-1 {
+	width: 330px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-1-Header {
+	float:left;
+	width: 220px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-1-Header-txt {
+	margin-top: 6px;
+	margin-left: 14px;
+	width: 210px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#3a90e8;
+	font-size:21px;
+	font-weight:500;
+}
+
+#iii02-2-1-Content {
+	float:left;
+	width: 100px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-1-Content-txt {
+	margin-top: 14px;
+	margin-left: 8px;
+	width: 90px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#878788;
+	font-size:13px;
+	font-weight:500;
+}
+
+#iii02-2-2 {
+	width: 330px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-2-Header {
+	float:left;
+	width: 220px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-2-Header-txt {
+	margin-top: 6px;
+	margin-left: 14px;
+	width: 210px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#3a90e8;
+	font-size:21px;
+	font-weight:500;
+}
+
+#iii02-2-2-Content {
+	float:left;
+	width: 100px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-2-Content-txt {
+	margin-top: 14px;
+	margin-left: 8px;
+	width: 90px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#878788;
+	font-size:13px;
+	font-weight:500;
+}
+
+#iii02-2-3 {
+	width: 330px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-3-Header {
+	float:left;
+	width: 220px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-3-Header-txt {
+	margin-top: 6px;
+	margin-left: 14px;
+	width: 210px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#3a90e8;
+	font-size:21px;
+	font-weight:500;
+}
+
+#iii02-2-3-Content {
+	float:left;
+	width: 100px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-3-Content-txt {
+	margin-top: 14px;
+	margin-left: 8px;
+	width: 90px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#878788;
+	font-size:13px;
+	font-weight:500;
+}
+
+#iii02-2-4 {
+	width: 330px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-4-Header {
+	float:left;
+	width: 220px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-4-Header-txt {
+	margin-top: 6px;
+	margin-left: 14px;
+	width: 210px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#3a90e8;
+	font-size:21px;
+	font-weight:500;
+}
+
+#iii02-2-4-Content {
+	float:left;
+	width: 100px;
+    height: 42px;
+	background-color: transparent;
+}
+
+#iii02-2-4-Content-txt {
+	margin-top: 14px;
+	margin-left: 8px;
+	width: 90px;
+    height: 32px;
+	background-color: transparent;
+	
+	color:#878788;
+	font-size:13px;
+	font-weight:500;
+}
+
+
+
+
+
+
+
+
+
+
+

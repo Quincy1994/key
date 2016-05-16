@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NLP</title>
+   <link rel="stylesheet" href="../static/bootstrap-3.3.5/css/bootstrap.min.css">
+   <script src="../static/js/jquery.min.js"></script>
+   <script src="../static/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<style>
+
+#input-top {	
+	width: 100%;
+	height: 100px;
+	padding-top: 20px;
+	background: #4b98ea;
+}
+
+#logo {	
+	width: 300px;
+	height: 60px;
+	margin-left: 30px;
+	padding: 5px 5px;
+	//background: #ff0000;
+	
+	font-family: "黑体";
+	font-size: 32px;
+	color: #ffffff;
+}
+
+#empty {	
+	width: 100%;
+	height: 25px;
+	background: #f6f6f6;
+}
+
+#input-middle {	
+	width: 100%;
+	height: 350px;
+	background: #f6f6f6;
+}
+
+#input-middle-input {	
+	width: 930px;
+	height: 299px;
+	margin: 0 auto;
+	//padding: 30px 20px;
+	padding-top: 30px; padding-left: 20px; padding-right: 20px;
+	//background: #ff0000;
+}
+
+#input-middle-output {	
+	width: 930px;
+	height: 51px;
+	margin: 0 auto;
+	//padding: 30px 20px;
+	//padding-top: 30px; padding-left: 20px; padding-right: 20px;
+	//background: #00ff00;
+}
+
+#input-middle-output02 {	
+    float: right;
+	width: 200px;
+	height: 51px;
+	margin: 0 auto;
+	//padding: 30px 20px;
+	//padding-top: 30px; padding-left: 20px; padding-right: 20px;
+	//background: #ff0000;
+}
+
+#input-bottom {	
+	width: 100%;
+	height: 320px;
+	background: #f6f6f6;
+}
+
+#input-bottom-input {	
+	width: 1000px;
+	height: 120px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-left: 0px;
+	padding-right: 50px;
+	//background: #ffff00;
+}
+
+#input-bottom-output {	
+	width: 1000px;
+	height: 320px;
+	margin: 0 auto;
+	//background: #ff0000;
+}
+
+#input-bottom-output02 {	
+	width: 900px;
+	height: 300px;
+	margin: 0 auto;
+	//background: #00ff00;
+}
+
+#input-bottom-output02-1 {	
+	float: left;
+	width: 300px;
+	height: 260px;
+	padding: 20px 10px;
+	//background: #555555;
+}
+
+#input-bottom-output02-2 {	
+	float: left;
+	width: 300px;
+	height: 260px;
+	padding: 20px 10px;
+	//background: #888888;
+}
+
+#input-bottom-output02-3 {	
+	float: left;
+	width: 300px;
+	height: 260px;
+	padding: 20px 10px;
+	//background: #cccccc;
+}
+
+/*css*/
+/*表格修饰*/
+.tablelist{
+border:1px solid #555555;
+font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;
+border-collapse:collapse;
+border-spacing:1pt;
+background-color:#eaf5ff;
+font-size:13px;
+}
+.tablelist tr {
+	height: 32px;
+}
+.tablelist td {
+	width: 50%;
+}
+.tablelist tr.backrow{
+	border:1px solid #555555;
+background-color:#c7e5ff;
+}
+.tablelist td.cen{
+	border:1px solid #555555;
+text-align:center;
+} 
+
+
+
+
+
+
+#input-bottom2 {	
+	width: 100%;
+	height: 525px;
+	background: #f6f6f6;
+}
+
+#input-bottom2-output {	
+	width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+	//background: #ffff00;
+}
+
+#input-bottom2-output-header {	
+	width: 1000px;
+	height: 50px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-left: 0px;
+	padding-right: 50px;
+	//background: #ff0000;
+}
+
+#input-bottom2-output-footer {	
+	width: 830px;  height: 400px;
+	margin: 0 auto;
+	margin-top: 25px;
+	padding-top: 10px;
+	padding-left: 0px;
+	padding-right: 50px;
+	background: #ffffff;
+	
+	/*  -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;    */
+	
+	border: 1px solid #696;padding: 60px 0;text-align: center;
+
+ -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+-webkit-box-shadow: #666 0px 0px 10px;        
+-moz-box-shadow: #666 0px 0px 10px;
+box-shadow: #666 0px 0px 10px;
+}
+
+#footer {	
+	width: 100%;
+	height: 95px;
+	background: #999999;
+}
+
+</style>
+
+
+
+
+    <div id="input-top">
+        <div id="logo">
+           关键词提取 
+        </div>
+    </div>
+    
+    
+    <div id="empty"> </div>
+    
+    
+    <div id="input-middle">  
+        <form enctype="multipart/form-data" method="post" action="">
+        <div id="input-middle-input"> 
+            <div class="form-group">
+            <label for="name">输入文本</label>  <!-- 输入文本 -->
+            <textarea class="form-control" rows="10" name="textarea">{{ text }}</textarea>
+            </div>
+        </div>  
+        <div id="input-middle-output">
+            <div id="input-middle-output02">    
+            <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+             <button type="submit" class="btn btn-default" action="index - 1.html">开始提取</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    
+    
+    
+
+    <div id="input-bottom"> 
+    
+        <div id="input-bottom-input">     
+    
+            <form class="form-horizontal" role="form",>
+            <div class="form-group">
+            <label for="firstname" class="col-sm-2 control-label">关键词列表</label>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" id="firstname" 
+                 placeholder="关键词包括...">
+              </div>
+            </div>
+            </form>
+   
+            <div id="input-bottom-output">
+              <div id="input-bottom-output02">
+                  <div id="input-bottom-output02-1">
+                     <table class="tablelist" border="1" align="center" width = "95%" >
+                        <tr class="backrow">
+                          <td class="cen">名称</td>
+                          <td class="cen">权重</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">召回</td>
+                          <td class="cen">50</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">santer</td>
+                          <td class="cen">44</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">宝马</td>
+                          <td class="cen">33</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">车辆</td>
+                          <td class="cen">32</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">螺栓</td>
+                          <td class="cen">27</td>
+                        </tr>
+                      </table>
+                  </div>
+                  <div id="input-bottom-output02-2">
+                     <table class="tablelist" border="1" align="center" width = "95%" >
+                        <tr class="backrow">
+                          <td class="cen">名称</td>
+                          <td class="cen">权重</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">召回</td>
+                          <td class="cen">50</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">santer</td>
+                          <td class="cen">44</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">宝马</td>
+                          <td class="cen">33</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">车辆</td>
+                          <td class="cen">32</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">螺栓</td>
+                          <td class="cen">27</td>
+                        </tr>
+                      </table>
+                  </div>
+                  <div id="input-bottom-output02-3">
+                     <table class="tablelist" border="1" align="center" width = "95%" >
+                        <tr class="backrow">
+                          <td class="cen">名称</td>
+                          <td class="cen">权重</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">召回</td>
+                          <td class="cen">50</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">santer</td>
+                          <td class="cen">44</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">宝马</td>
+                          <td class="cen">33</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">车辆</td>
+                          <td class="cen">32</td>
+                        </tr>
+                        <tr class="cen">
+                          <td class="cen">螺栓</td>
+                          <td class="cen">27</td>
+                        </tr>
+                      </table>
+                  </div>
+              </div>
+            </div>
+            
+        
+        </div>
+
+    </div>
+    
+
+
+    
+
+
+    <div id="input-bottom2"> 
+
+        <div id="input-bottom2-output"> 
+
+            <div id="input-bottom2-output-header">
+                    
+            <form class="form-horizontal" role="form">
+            <div class="form-group">
+            <label for="firstname" class="col-sm-2 control-label">词语网络图</label>
+            </div>
+            </form>
+        
+            </div>
+            
+            <div id="input-bottom2-output-footer"> </div>
+
+        </div>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    <div id="footer"> 
+
+    </div>
+    
+    
+
+
+</body>
+</html>
