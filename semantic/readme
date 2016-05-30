@@ -1,0 +1,9 @@
+在key_score.py中
+if __name__ == "__main__":
+         keyword_list = Keyword().keyword('xxxxxxxxxxxxx')
+
+
+
+'xxxxxxxx'表示博文字符串
+keyword_list返回的是关键词列表
+
